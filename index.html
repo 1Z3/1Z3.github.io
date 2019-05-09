@@ -13,7 +13,11 @@
 	</head>
 	<body class="is-preload">
 
-<audio loop src="music.mp3" id="audio" autoplay preload="auto"></audio>
+		<audio controls="controls" autoplay="autoplay" controls="controls" hidden="hidden">
+			<source src="music.mp3" type="audio/mp3">
+			<source src="music.mp3" type="audio/ogg">
+			<embed height="50px" width="100px" src="music.mp3">
+		</audio>
 
 		<!-- Wrapper -->
 			<div id="wrapper">
